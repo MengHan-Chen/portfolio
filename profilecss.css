@@ -1,0 +1,174 @@
+/*全域*/
+p,h1,h2,h3,h4,h5 {
+    font-family: 'NotoSansTC-Light';
+    color: #FFF;   
+}
+
+.container{
+    width: 1200px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 50px;
+    word-spacing: 5px;
+    color:  #FFF;
+    background-color:#333;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+
+
+.pb{
+    padding-bottom:75px ;
+}
+
+/*全域End*/
+
+
+
+/*各區塊顏色*/
+header, footer{
+    background-image: linear-gradient(120deg, rgb(32, 43, 49), rgb(23, 88, 126));
+}
+
+.bgpic{
+    background-image: url(img/company.jpg);
+    background-attachment: fixed;
+}
+
+.workbg{
+    background-image: linear-gradient(120deg, rgb(133, 163, 179), rgb(184, 223, 240));
+}
+
+.workillusbg{
+    background-image: url(img/colorpencil.jpg);
+    background-attachment: fixed;
+}
+
+.workdesignbg{
+    background-color: #CCC;
+}
+/*各區塊顏色End*/
+
+
+/*header*/
+/*header{
+    background-image: url(img/header05-2.jpg);
+    background-attachment: fixed;
+}
+*/
+header p, footer p{
+    color: #FFF;
+}
+
+.name p:first-of-type{
+    letter-spacing: 25px;
+    margin: 0 -25px 0 0;
+}
+
+.eng{
+    font-family: 'Roboto';
+}
+
+.eng-name{
+    font-size: 15px;
+}
+
+.skill p{
+    padding: 0 0 0 20px;
+}
+
+.skill p:not(:first-child)::before{
+    content:'|';
+    padding: 0 20px 0 0;
+}
+/*header End*/
+
+
+
+
+/*work*/
+.work p{
+    color: rgb(23, 88, 126);
+}
+
+.border-white{
+    border: 2px solid #FFF;
+    background-color: #FFF;
+}
+
+
+/*擅長軟體*/
+.skillblock{
+    padding: 10px 0;
+}
+
+.yellowtitle{
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+    background: rgb(212, 163, 0);
+    color: #FFF;
+    line-height: 10px;
+    border-radius: 5px;
+}
+
+.design-pic{
+    width: 250px;
+    margin: auto;
+}
+.work .p-gray{
+    color: #666;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/*擅長軟體End*/
+
+
+/*footer*/
+.title-white{
+    font-size: 17px;
+    color: #FFF;
+    margin: 0 0 5px ;
+}
+
+.border{
+    right: 10px;
+    background-color: #fff;
+    width: 90px;
+    height: 1px;
+
+}
+
+footer p{
+    margin: 5px 0 0 0;
+}
+
+.maginleft{
+    margin: 15px -25px 0 0;
+}
+
+/*圖片放大*/
+
+img{
+    transform: .2s;
+}
+
+img:hover{
+    transform: translate(0, -50px);
+    transform: scale(1.2);
+    transition-duration: .3s;
+}
+/*擅長軟體區域 圖片不需放大*/
+img[alt='design-pic']{
+    transform: translate(0, 0);
+    transform: scale(1);
+}
+
+/*圖片放大End*/
